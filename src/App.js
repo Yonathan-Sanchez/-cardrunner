@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Header from './Components/Header.js';
 import Sidebar from './Components/Sidebar.js';
@@ -8,19 +9,25 @@ import Results from './Pages/Results.js';
 function App() {
 	return (
 		<div className='App'>
-			<nav>
-				<Link to={'/'}>Home</Link>
-				<Link to={'/Results'}>Results</Link>
-				<Link to={'/Details'}>Details</Link>
-				<Sidebar />
-			</nav>
-			<header className='App-header'>app connected</header>
+			<header className='App-header'>
+				app connected
+				<Header />
+				<nav>
+					<Link to={'/'}>Home</Link>
+					<Link to={'/Results'}>Results</Link>
+					<Link to={'/Details'}>Details</Link>
+					<Sidebar />
+				</nav>
+			</header>
 			<main>
 				<Routes>
+					{/* <Route path='/' element={<Main cards={cards} />} /> */}
+					{/* <Route path='/:cardCode' element={<Main />} /> */}
 					<Route path='/' element={<Main />} />
 					<Route path='/Results' element={<Results />} />
 					<Route path='/Details' element={<Details />} />
 				</Routes>
+				{/* <img src={imgUrl} alt={''} /> */}
 			</main>
 		</div>
 	);
@@ -47,3 +54,7 @@ src/components/App/App.js
     </div>
   )
   */
+
+//   const [data, setData] = useState(null);
+
+// 	const [error, setError] = useState(null);
