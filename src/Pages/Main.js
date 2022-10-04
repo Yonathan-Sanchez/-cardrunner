@@ -40,8 +40,6 @@ function Main({ cards }) {
 	// 		.catch(console.error);
 	// }
 
-	//.map = grab all the title from the indices, build a list
-
 	// useEffect(() => {
 	// 	getCardData();
 	// 	// if (loading == false) {

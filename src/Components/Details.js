@@ -6,7 +6,7 @@ function Details({ cards }) {
 		let list = cards.map((card) => {
 			return (
 				<div className='cardList'>
-					<p>{card}</p>
+					<p>{card.code}</p>
 				</div>
 			);
 		});

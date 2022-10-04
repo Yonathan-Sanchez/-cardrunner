@@ -5,7 +5,9 @@ import Sidebar from './Components/Sidebar.js';
 import Details from './Components/Details.js';
 import Main from './Pages/Main.js';
 import Core from './Components/Core.js';
-import SideCodeResults from './Pages/SideCodeResults.js';
+import SideCodeResults from './Components/SideCodeResults.js';
+import FactionCodeResults from './Components/FactionCodeResults.js';
+import TypeCodeResults from './Components/TypeCodeResults.js';
 import './CSS/App.css';
 
 function App() {
@@ -44,7 +46,7 @@ function App() {
 				<Link to={'/Details'}>Details</Link>
 			</nav>
 			<Sidebar />
-			<main className='main'>
+			<main className='main cardList'>
 				{/* {!loading ? cards[0].faction_code : <div>loading...</div>} */}
 				<Routes>
 					{/* <Route path='/:cardCode' element={<Details />} /> */}
@@ -54,8 +56,17 @@ function App() {
 					/>
 					<Route path='/Core' element={<Core cards={cards} />} />
 					<Route
-						path='/Results/:sidecode'
+						path='/SideCodeResults/:sideCode'
 						element={<SideCodeResults cards={cards} />}
+					/>
+					<Route
+						path='/FactionCodeResults/:factionCode'
+						element={<FactionCodeResults cards={cards} />}
+					/>
+
+					<Route
+						path='/TypeCodeResults/:typeCode'
+						element={<TypeCodeResults cards={cards} />}
 					/>
 					<Route path='/Details' element={<Details />} />
 				</Routes>

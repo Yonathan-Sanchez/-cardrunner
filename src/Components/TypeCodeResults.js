@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-function SideCodeResults({ cards }) {
-	const { sidecode } = useParams();
+function TypeCodeResults({ cards }) {
+	const { typeCode } = useParams();
 
-	const cardsBySideCode = cards.filter((card) => card.side_code === sidecode);
+	const cardsByTypeCode = cards.filter((card) => card.type_code == typeCode);
 
-	let newCardList = cardsBySideCode.map((card) => {
+	let newCardList = cardsByTypeCode.map((card) => {
 		return (
 			<div className='cardListItem' key={card.code}>
 				<img
@@ -19,7 +19,7 @@ function SideCodeResults({ cards }) {
 			</div>
 		);
 	});
-	return <div className='cardList'>{newCardList}</div>;
+	return newCardList;
 }
 
-export default SideCodeResults;
+export default TypeCodeResults;

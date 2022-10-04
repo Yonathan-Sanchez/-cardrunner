@@ -11,69 +11,71 @@ function Sidebar({ cards }) {
 				<li>neutral</li>
 			</ul> */}
 			<h3>/subsets</h3>
-			<Link to='/results/corp'>/corp</Link>
+			<Link to='/SideCodeResults/corp'>/corp</Link>
 			<ul>
 				<li>
-					<Link to='/'>/Jinteki</Link>
+					<Link to='/FactionCodeResults/jinteki'>/Jinteki</Link>
 				</li>
 				<li>
-					<Link to='/'>/Haas-Bioroid</Link>
+					<Link to='/FactionCodeResults/haas-bioroid'>/Haas-Bioroid</Link>
 				</li>
 				<li>
-					<Link to='/'>/NBN</Link>
+					<Link to='/FactionCodeResults/nbn'>/NBN</Link>
 				</li>
 				<li>
-					<Link to='/'>/Weyland Consortium</Link>
+					<Link to='/FactionCodeResults/weyland-consortium'>
+						/Weyland Consortium
+					</Link>
 				</li>
 				<li>
 					/type
 					<ul>
 						<li>
-							<Link to='/'>/agenda</Link>
+							<Link to='/TypeCodeResults/agenda'>/agenda</Link>
 						</li>
 						<li>
-							<Link to='/'>/asset</Link>
+							<Link to='/TypeCodeResults/asset'>/asset</Link>
 						</li>
 						<li>
-							<Link to='/'>/operation</Link>
+							<Link to='/TypeCodeResults/operation'>/operation</Link>
 						</li>
 						<li>
-							<Link to='/'>/ice</Link>
+							<Link to='/TypeCodeResults/ice'>/ice</Link>
 						</li>
 						<li>
-							<Link to='/'>/upgrade</Link>
+							<Link to='/TypeCodeResults/upgrade'>/upgrade</Link>
 						</li>
 					</ul>
 				</li>
 			</ul>
-			<Link to='/results/runner'>/runner</Link>
+			<Link to='/SideCodeResults/runner'>/runner</Link>
 			<ul>
 				<li>
-					<Link to='/'>/Anarch</Link>
+					<Link to='/FactionCodeResults/anarch'>/Anarch</Link>
 				</li>
 				<li>
-					<Link to='/'>/Criminal</Link>
+					<Link to='/FactionCodeResults/criminal'>/Criminal</Link>
 				</li>
 				<li>
-					<Link to='/'>/Shaper</Link>
+					<Link to='/FactionCodeResults/shaper'>/Shaper</Link>
 				</li>
 				<li>
 					/type
 					<ul>
 						<li>
-							<Link to='/'>/identity</Link>
+							<Link to='/TypeCodeResults/identity'>/identity</Link>
 						</li>
 						<li>
-							<Link to='/'>/event</Link>
+							<Link to='/TypeCodeResults/event'>/event</Link>
 						</li>
 						<li>
-							<Link to='/'>/hardware</Link>
+							<Link to='/TypeCodeResults/hardware'>/hardware</Link>
 						</li>
 						<li>
-							<Link to='/'>/program</Link>
+							<Link to='/TypeCodeResults/program'>/program</Link>
 						</li>
 						<li>
-							<Link to='/'>/resource</Link>
+							<Link to='/TypeCodeResults/resource'>/resource</Link>
 						</li>
 					</ul>
 				</li>

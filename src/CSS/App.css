@@ -16,9 +16,11 @@ h1 {
 
 .App {
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 100px 1fr;
     gap: 10px;
+    font-family: 'Orbitron', sans-serif;
+
 }
 
 .App-header {
@@ -47,10 +49,26 @@ nav {
     background-color: inherit;
     color: #3bd8ff;
 }
+.sidebar a {
+    color: #3bd8ff;
+}
 
 .main {
     grid-column: 2 /span 2;
-    grid-row: 2 / span 1;
+    grid-row: 2 / span 2;
     /* background-color: #602080;     */
     /* color: #202060; */
 }
+
+.cardList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(250px, auto);
+    gap: 1rem;
+    /* background-color: white; */
+    justify-items: center;
+    align-items: center;
+}
+/* .cardListItem {
+    
+}  */
