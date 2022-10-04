@@ -2,30 +2,6 @@ import { useReducer } from 'react';
 import { Link } from 'react-router-dom';
 
 function Sidebar({ cards }) {
-	const cardList = () => {
-		let list = cards.map((card) => {
-			return (
-				<div className='cardList'>
-					<p>{card}</p>
-				</div>
-			);
-		});
-		// let cardList = cards.map((card) => {
-		// 	return (
-		// 		<div className='sidebarItem' key={card.code}>
-		// 			<div>{card.code}</div>
-		// 			<div>{card.title}</div>
-		// 			<br />
-
-		// 			{/* <img
-		// 			src={`https://static.nrdbassets.com/v1/large/${card.code}.jpg`}
-		// 			alt=''
-		// 		/> */}
-		// 		</div>
-		// 	);
-		// });
-	};
-
 	return (
 		<div className='sidebar'>
 			{/* <h3>SIDE/</h3>
@@ -34,8 +10,8 @@ function Sidebar({ cards }) {
 				<li>runner</li>
 				<li>neutral</li>
 			</ul> */}
-			<h3>/subset</h3>
-			<Link to='/'>/corp</Link>
+			<h3>/subsets</h3>
+			<Link to='/results/corp'>/corp</Link>
 			<ul>
 				<li>
 					<Link to='/'>/Jinteki</Link>
@@ -70,7 +46,7 @@ function Sidebar({ cards }) {
 					</ul>
 				</li>
 			</ul>
-			<Link to='/'>/runner</Link>
+			<Link to='/results/runner'>/runner</Link>
 			<ul>
 				<li>
 					<Link to='/'>/Anarch</Link>
@@ -102,7 +78,6 @@ function Sidebar({ cards }) {
 					</ul>
 				</li>
 			</ul>
-			<Link to='/'>/neutral</Link>
 		</div>
 	);
 }

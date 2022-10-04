@@ -63,25 +63,16 @@ function Main({ cards }) {
 
 	// let cardList = cards.map((card) => {
 	// 	if (card.pack_code) {
-	// 		return (
-	// 			<div className='cardListItem' key={card.code}>
-	// 				{/* <div>{card.pack_code}</div> */}
-
-	// 				<img
-	// 					src={`https://static.nrdbassets.com/v1/large/${card.code}.jpg`}
-	// 					alt=''
-	// 				/>
-	// 				<br />
-	// 			</div>
-	// 		);
+	// 		return {card.pack_code};
 	// 	}
 	// });
+	// !loading ? loaded() : notLoaded
 
 	return (
 		<>
 			<p>
-				{'<--'} Pick a subset or see the{' '}
-				<Link to={'/results'}>full core set</Link>.
+				{'<--'} Pick a subset or see the <Link to={'/Core'}>full core set</Link>
+				.
 			</p>
 			{/* <img
 				src={`https://static.nrdbassets.com/v1/large/${cards[0].code}.jpg`}

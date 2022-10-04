@@ -51,6 +51,6 @@ nav {
 .main {
     grid-column: 2 /span 2;
     grid-row: 2 / span 1;
-    background-color: inherit;    
+    /* background-color: #602080;     */
     /* color: #202060; */
 }
