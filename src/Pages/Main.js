@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function Main() {
-	const [cards, setCards] = useState([]);
-	const [cardCode, setCardCode] = useState('');
-	const [imgUrl, setImgUrl] = useState('');
-	const [loading, setLoading] = useState(true);
+function Main({ cards }) {
+	// const [cards, setCards] = useState([]);
+	// const [cardCode, setCardCode] = useState('');
+	// const [imgUrl, setImgUrl] = useState('');
+	// const [loading, setLoading] = useState(true);
 
 	// // function getRandomCardCode(min, max) {
 	// // 	let num = 0;
@@ -23,66 +23,72 @@ function Main() {
 	// // 		return '0000' + num;
 	// // 	} else return num;
 	// // }
-	function getCardData() {
-		// 	// let randomCardCode = getRandomCardCode(5, 33066);
-		// 	// console.log(randomCardCode);
-
-		const url = `https://netrunnerdb.com/api/2.0/public/cards`;
-		fetch(url)
-			.then((res) => res.json())
-			.then((res) => {
-				console.log('data:', res.data);
-				setCards(res.data);
-				setCardCode(res.data[70].code);
-				console.log(cardCode);
-				setLoading(false);
-			})
-			.catch(console.error);
-	}
-	// async function getCardData() {
+	// function getCardData() {
 	// 	// let randomCardCode = getRandomCardCode(5, 33066);
 	// 	// console.log(randomCardCode);
-	// 	try {
-	// 		const url = `https://netrunnerdb.com/api/2.0/public/cards`;
 
-	// 		const res = await fetch(url);
-	// 		const data = await res.json();
-
-	// 		// console.log('data:', data.data);
-	// 		setCards(data.data);
-	// 		// console.log(data.data[70]);
-	// 		setCardCode(data.data[70].code);
-	// 		// console.log(cardCode);
-	// 		setLoading(false);
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
+	// 	const url = `https://netrunnerdb.com/api/2.0/public/cards`;
+	// 	fetch(url)
+	// 		.then((res) => res.json())
+	// 		.then((res) => {
+	// 			console.log('data:', res.data);
+	// 			setCards(res.data);
+	// 			// setCardCode(res.data[1014].code);
+	// 			// console.log(cardCode);
+	// 			setLoading(false);
+	// 		})
+	// 		.catch(console.error);
 	// }
 
-	useEffect(() => {
-		getCardData();
-		if (loading == false) {
-			setImgUrl(`https://static.nrdbassets.com/v1/large/${cardCode}.jpg`);
-		}
-	}, [cardCode]);
+	//.map = grab all the title from the indices, build a list
+
+	// useEffect(() => {
+	// 	getCardData();
+	// 	// if (loading == false) {
+	// 	// setImgUrl(`https://static.nrdbassets.com/v1/large/${cardCode}.jpg`);
+
+	// 	// }
+	// }, [loading]);
 	// const cardUrl = `https://netrunnerdb.com/api/2.0/public/card/${cardCode}`;
 
-	function notLoaded() {
-		return (
-			<div>
-				<p>Loading...</p>
-			</div>
-		);
-	}
+	// function notLoaded() {
+	// 	return (
+	// 		<div>
+	// 			<p>Loading...</p>
+	// 		</div>
+	// 	);
+	// }
 
-	function loaded() {
-		return (
-			<div>
-				<img src={imgUrl} alt={''} />;
-			</div>
-		);
-	}
-	return !loading ? loaded() : notLoaded();
+	// function loaded() {
+
+	// let cardList = cards.map((card) => {
+	// 	if (card.pack_code) {
+	// 		return (
+	// 			<div className='cardListItem' key={card.code}>
+	// 				{/* <div>{card.pack_code}</div> */}
+
+	// 				<img
+	// 					src={`https://static.nrdbassets.com/v1/large/${card.code}.jpg`}
+	// 					alt=''
+	// 				/>
+	// 				<br />
+	// 			</div>
+	// 		);
+	// 	}
+	// });
+
+	return (
+		<>
+			<p>
+				{'<--'} Pick a subset or see the{' '}
+				<Link to={'/results'}>full core set</Link>.
+			</p>
+			{/* <img
+				src={`https://static.nrdbassets.com/v1/large/${cards[0].code}.jpg`}
+				alt=''
+			/> */}
+		</>
+	);
 }
 
 export default Main;

@@ -1,0 +1,56 @@
+
+body {
+    background-color: black;
+    color: #3bd8ff;
+}
+
+a {
+    color: #c231de;
+    text-shadow: #3bd8ff;
+}
+
+h1 {
+    color: #3bd8ff;
+    text-shadow: 2px 2px #602080;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    gap: 10px;
+}
+
+.App-header {
+    display: flex;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    align-items: center;
+    background: rgb(194, 49, 222);
+    background: linear-gradient(90deg, rgba(194, 49, 222, 1) 25%, rgba(59, 216, 255, 1) 75%);
+    color: #202060;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    align-items: flex-end;
+}
+
+.sidebar {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-color: inherit;
+    color: #3bd8ff;
+}
+
+.main {
+    grid-column: 2 /span 2;
+    grid-row: 2 / span 1;
+    background-color: inherit;    
+    /* color: #202060; */
+}
