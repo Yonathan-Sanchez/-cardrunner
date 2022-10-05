@@ -1,0 +1,188 @@
+h1 a{
+    /* color: white; */
+    font-weight: 800;
+    position: relative;
+    /* padding: 30px; */
+}
+
+h1 a::before,
+h1 a::after {
+    padding: 30px;
+    /* color: white; */
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background: black; */
+    overflow: hidden;
+    /* top: 0; */
+} 
+
+h1 a::before {
+    left: 3px; 
+    text-shadow: -2px 0 white;
+    animation-name: glitch-left;
+    animation-delay: 0s;
+    animation-direction: reverse-alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+h1 a::after {
+    left: -3px;
+    text-shadow: -2px 0 black;
+    animation-name: glitch-right;
+    animation-delay: 0s;
+    animation-direction: reverse-alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+    @keyframes glitch-left {
+       from {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    } 
+        5% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    } 
+        10% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        15% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        20% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        25% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        30% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        35% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        40% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        45% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        50% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        55% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        60% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        65% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        70% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        75% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        80% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        85% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        90% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        95% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+        to {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px) ;
+    }
+}
+    @keyframes glitch-right {
+        0% {
+        clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+    }
+        5% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        10% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        15% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        20% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        25% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        30% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        35% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        40% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        45% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        50% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        55% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        60% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        65% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        70% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        75% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        80% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        85% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        90% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        95% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+
+        100% {
+            clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+        }
+    }

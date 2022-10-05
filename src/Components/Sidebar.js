@@ -4,7 +4,7 @@ function Sidebar(props) {
 	return (
 		<div className='sidebar'>
 			<h3>
-				<Link to={'/Core'}>/full_core_set</Link>{' '}
+				<Link to={'/Core'}>/core</Link>{' '}
 			</h3>
 			<hr />
 			<h3>
@@ -90,6 +90,3 @@ function Sidebar(props) {
 }
 
 export default Sidebar;
-/*
-useReducer
-*/

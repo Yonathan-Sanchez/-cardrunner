@@ -33,10 +33,11 @@ h1 a{
     grid-row: 1 / span 1;
     background: rgb(194, 49, 222);
     background: linear-gradient(90deg, rgba(194, 49, 222, 1) 25%, rgba(59, 216, 255, 1) 75%);
-    color: #202060;
+    /* color: #202060; */
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    text-align: center;
+    /* z-index: 1; */
 }
 
 .sidebar {
@@ -44,7 +45,6 @@ h1 a{
     grid-row: 2 / span 1;
     background-color: inherit;
     color: #3bd8ff;
-    /* margin-left: 10px; */
     border-right: solid 2px #c231de;
 }
 
@@ -68,7 +68,14 @@ h1 a{
 }
 
 .landing {
+    display: flex;
+    flex-direction: column;
     grid-column: 1 /span 4;
+    margin-left: 1em;
+    margin-right: 1em;
+    align-items: center;
+
+
 }
 
 li {
@@ -79,5 +86,15 @@ hr {
     border: solid 0.5px rgba(194, 49, 222, 1)
 }
 footer {
+
     border-top:solid 2px rgb(194, 49, 222)
+}
+.fancy {
+    background-image: linear-gradient(90deg,
+        rgba(194, 49, 222, 1) 25%,
+        rgba(59, 216, 255, 1) 75%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
 }

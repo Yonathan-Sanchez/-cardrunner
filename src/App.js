@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Sidebar from './Components/Sidebar.js';
-import Details from './Components/Details.js';
 import Main from './Pages/Main.js';
 import Core from './Components/Core.js';
 import SideCodeResults from './Components/SideCodeResults.js';
 import FactionCodeResults from './Components/FactionCodeResults.js';
 import TypeCodeResults from './Components/TypeCodeResults.js';
 import './CSS/App.css';
+import './CSS/Title.css';
 
 function App() {
 	const [cards, setCards] = useState([]);
 	const [loading, setLoading] = useState(true);
 
-	function getCardData() {
+	function getCards() {
 		const url = `https://netrunnerdb.com/api/2.0/public/cards`;
 		fetch(url)
 			.then((res) => res.json())
@@ -25,7 +25,7 @@ function App() {
 	}
 
 	useEffect(() => {
-		getCardData();
+		getCards();
 	}, [loading]);
 
 	return (
@@ -56,7 +56,6 @@ function App() {
 						path='/TypeCodeResults/:typeCode'
 						element={<TypeCodeResults cards={cards} />}
 					/>
-					<Route path='/Details' element={<Details />} />
 				</Routes>
 			</main>
 		</div>
