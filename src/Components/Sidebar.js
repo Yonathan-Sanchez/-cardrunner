@@ -29,8 +29,9 @@ function Sidebar(props) {
 						/Weyland Consortium
 					</Link>
 				</li>
+				<br />
 				<li>
-					/type
+					[--card type--]
 					<ul>
 						<li>
 							<Link to='/TypeCodeResults/agenda'>/agenda</Link>
@@ -65,7 +66,8 @@ function Sidebar(props) {
 					<Link to='/FactionCodeResults/shaper'>/Shaper</Link>
 				</li>
 				<li>
-					/type
+					<br />
+					[--card type--]
 					<ul>
 						<li>
 							<Link to='/TypeCodeResults/event'>/event</Link>
