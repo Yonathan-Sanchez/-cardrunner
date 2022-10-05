@@ -13,9 +13,6 @@ function SideCodeResults({ cards }) {
 					src={`https://static.nrdbassets.com/v1/large/${card.code}.jpg`}
 					alt=''
 				/>
-				{/* <div>{card.side_code}</div> */}
-
-				<br />
 			</div>
 		);
 	});

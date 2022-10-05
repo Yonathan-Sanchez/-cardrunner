@@ -1,17 +1,19 @@
-import { useReducer } from 'react';
 import { Link } from 'react-router-dom';
 
-function Sidebar({ cards }) {
+function Sidebar(props) {
 	return (
 		<div className='sidebar'>
-			{/* <h3>SIDE/</h3>
-			<ul>
-				<li>corporation</li>
-				<li>runner</li>
-				<li>neutral</li>
-			</ul> */}
-			<h3>/subsets</h3>
-			<Link to='/SideCodeResults/corp'>/corp</Link>
+			<h3>
+				<Link to={'/Core'}>/full_core_set</Link>{' '}
+			</h3>
+			<hr />
+			<h3>
+				<Link to='/TypeCodeResults/identity'>/identity</Link>
+			</h3>
+			<hr />
+			<h3>
+				<Link to='/SideCodeResults/corp'>/corporation</Link>
+			</h3>
 			<ul>
 				<li>
 					<Link to='/FactionCodeResults/jinteki'>/Jinteki</Link>
@@ -48,7 +50,10 @@ function Sidebar({ cards }) {
 					</ul>
 				</li>
 			</ul>
-			<Link to='/SideCodeResults/runner'>/runner</Link>
+			<hr />
+			<h3>
+				<Link to='/SideCodeResults/runner'>/runner</Link>
+			</h3>
 			<ul>
 				<li>
 					<Link to='/FactionCodeResults/anarch'>/Anarch</Link>
@@ -62,9 +67,6 @@ function Sidebar({ cards }) {
 				<li>
 					/type
 					<ul>
-						<li>
-							<Link to='/TypeCodeResults/identity'>/identity</Link>
-						</li>
 						<li>
 							<Link to='/TypeCodeResults/event'>/event</Link>
 						</li>
@@ -80,6 +82,7 @@ function Sidebar({ cards }) {
 					</ul>
 				</li>
 			</ul>
+			<footer></footer>
 		</div>
 	);
 }

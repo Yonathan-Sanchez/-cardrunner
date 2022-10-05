@@ -1,46 +1,42 @@
-
 body {
     background-color: black;
     color: #3bd8ff;
+    margin: 0;
 }
 
 a {
     color: #c231de;
     text-shadow: #3bd8ff;
+    text-decoration: none;
+    
 }
 
 h1 {
-    color: #3bd8ff;
     text-shadow: 2px 2px #602080;
+}
+
+h1 a{
+   color: #3bd8ff;
 }
 
 .App {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 200px minmax(300px, 1fr);
     grid-template-rows: 100px 1fr;
-    gap: 10px;
     font-family: 'Orbitron', sans-serif;
 
 }
 
 .App-header {
     display: flex;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     grid-row: 1 / span 1;
-    align-items: center;
     background: rgb(194, 49, 222);
     background: linear-gradient(90deg, rgba(194, 49, 222, 1) 25%, rgba(59, 216, 255, 1) 75%);
     color: #202060;
     justify-content: center;
-    align-items: flex-end;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
-    align-items: flex-end;
+    align-items: center;
+    z-index: 1;
 }
 
 .sidebar {
@@ -48,7 +44,10 @@ nav {
     grid-row: 2 / span 1;
     background-color: inherit;
     color: #3bd8ff;
+    /* margin-left: 10px; */
+    border-right: solid 2px #c231de;
 }
+
 .sidebar a {
     color: #3bd8ff;
 }
@@ -56,8 +55,6 @@ nav {
 .main {
     grid-column: 2 /span 2;
     grid-row: 2 / span 2;
-    /* background-color: #602080;     */
-    /* color: #202060; */
 }
 
 .cardList {
@@ -65,10 +62,22 @@ nav {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: minmax(250px, auto);
     gap: 1rem;
-    /* background-color: white; */
     justify-items: center;
     align-items: center;
+    margin-top: 10px;
 }
-/* .cardListItem {
-    
-}  */
+
+.landing {
+    grid-column: 1 /span 4;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    border: solid 0.5px rgba(194, 49, 222, 1)
+}
+footer {
+    border-top:solid 2px rgb(194, 49, 222)
+}
