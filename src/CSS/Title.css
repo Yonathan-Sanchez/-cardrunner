@@ -1,23 +1,23 @@
-h1 a{
-    /* color: white; */
+h1>a {
+    color: white;
     font-weight: 800;
     position: relative;
-    /* padding: 30px; */
+    padding: 30px;
 }
 
-h1 a::before,
-h1 a::after {
+h1>a::before,
+h1>a::after {
     padding: 30px;
-    /* color: white; */
+    color: white;
     position: absolute;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* background: black; */
+    width: 100%;
+    height: 100%;
+    background: black;
     overflow: hidden;
-    /* top: 0; */
+    top: 0;
 } 
 
-h1 a::before {
+h1>a::before {
     left: 3px; 
     text-shadow: -2px 0 white;
     animation-name: glitch-left;
@@ -27,7 +27,7 @@ h1 a::before {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
  }
-h1 a::after {
+h1>a::after {
     left: -3px;
     text-shadow: -2px 0 black;
     animation-name: glitch-right;

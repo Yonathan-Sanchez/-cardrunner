@@ -6,7 +6,6 @@ body {
 
 a {
     color: #c231de;
-    text-shadow: #3bd8ff;
     text-decoration: none;
     
 }
@@ -17,6 +16,10 @@ h1 {
 
 h1 a{
    color: #3bd8ff;
+}
+h3 {
+    margin: 0;
+    padding-left: 5px;
 }
 
 .App {
@@ -33,21 +36,20 @@ h1 a{
     grid-row: 1 / span 1;
     background: rgb(194, 49, 222);
     background: linear-gradient(90deg, rgba(194, 49, 222, 1) 25%, rgba(59, 216, 255, 1) 75%);
-    /* color: #202060; */
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* z-index: 1; */
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     background-color: inherit;
     color: #3bd8ff;
     border-right: solid 2px #c231de;
 }
-
 .sidebar a {
     color: #3bd8ff;
 }
@@ -55,6 +57,9 @@ h1 a{
 .main {
     grid-column: 2 /span 2;
     grid-row: 2 / span 2;
+}
+p {
+   text-align: center;
 }
 
 .cardList {
@@ -83,7 +88,9 @@ li {
 }
 
 hr {
-    border: solid 0.5px rgba(194, 49, 222, 1)
+    border: solid 0.5px rgba(194, 49, 222, 1);
+    width: 100%;
+    
 }
 footer {
 
@@ -93,8 +100,35 @@ footer {
     background-image: linear-gradient(90deg,
         rgba(194, 49, 222, 1) 25%,
         rgba(59, 216, 255, 1) 75%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
+
+form {
+justify-self: center;
+align-self: center;
+margin-top: 5px;
+}
+
+input[type="text"],
+textarea {
+    background-color:rgb(156, 43, 184);
+    text-align: center;
+    border-radius: 5%;
+}
+
+input,
+select,
+textarea {
+    color: rgba(59, 216, 255, 1)
+}
+
+::placeholder {
+    font-family: 'Orbitron', sans-serif;    
+    color: rgba(153, 223, 255, 0.5)
+}
+ input:focus::placeholder {
+     color: transparent;
+ }

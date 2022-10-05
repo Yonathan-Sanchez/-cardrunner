@@ -7,11 +7,12 @@ function Main(props) {
 				Welcome to <span className='fancy'>Cardrunner</span>.
 			</h2>
 			<p>
-				Here, you can browse the cards of the base Netrunner game by subsets.
+				Browse the cards of the base Netrunner game by subsets or find cards by
+				name.
 			</p>
 			<p>
-				{'<--'} Pick a subset or see the full <Link to={'/Core'}>core</Link>{' '}
-				set.
+				{'<--'} Type in a name, click on a subset, or see the full{' '}
+				<Link to={'/Core'}>core</Link> set.
 			</p>
 		</div>
 	);

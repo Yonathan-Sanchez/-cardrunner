@@ -6,12 +6,15 @@ import Core from './Components/Core.js';
 import SideCodeResults from './Components/SideCodeResults.js';
 import FactionCodeResults from './Components/FactionCodeResults.js';
 import TypeCodeResults from './Components/TypeCodeResults.js';
+import SearchResults from './Components/SearchResults.js';
 import './CSS/App.css';
-import './CSS/Title.css';
+// import './CSS/Title.css';
 
 function App() {
 	const [cards, setCards] = useState([]);
 	const [loading, setLoading] = useState(true);
+	const [searchString, setSearchString] = useState('');
+	const [foundCard, setFoundCard] = useState({});
 
 	function getCards() {
 		const url = `https://netrunnerdb.com/api/2.0/public/cards`;
@@ -35,7 +38,12 @@ function App() {
 					<Link to='/'>/ c a r d r u n n e r</Link>
 				</h1>
 			</header>
-			<Sidebar />
+			<Sidebar
+				cards={cards}
+				searchString={searchString}
+				setSearchString={setSearchString}
+				setFoundCard={setFoundCard}
+			/>
 			<main className='main cardList'>
 				<Routes>
 					<Route
@@ -55,6 +63,16 @@ function App() {
 					<Route
 						path='/TypeCodeResults/:typeCode'
 						element={<TypeCodeResults cards={cards} />}
+					/>
+					<Route
+						path='/SearchResults/:cardName'
+						element={
+							<SearchResults
+								cards={cards}
+								searchString={searchString}
+								foundCard={foundCard}
+							/>
+						}
 					/>
 				</Routes>
 			</main>
