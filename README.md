@@ -1,9 +1,8 @@
 Description:
-">cardrunner" is a React app that pulls data from https://netrunnerdb.com/api/doc and makes it accessible to users. At its core, the app allows users to navigate the cards that make up the base Netrunner game. It comes from a deep appreciation for the game itself and the community that keeps it alive and strong online. Version 1.0 functions as a way for people who are interested in the game to familiarize themselves with the base game before diving into the full game.
+">cardrunner" is a React app that pulls data from https://netrunnerdb.com/api/doc and makes it accessible to users. At its core, the site is square one for aspiring Netrunners. Version 1.0 functions as a way for people who are interested in the Netrunner card-game to familiarize themselves with the cards in the base game before diving into the full game online. This site comes from a deep appreciation for the game itself and the community that keeps it alive and strong online.
 
 Screenshot of the app:
 ![Screenshot of ">cardrunner"](https://user-images.githubusercontent.com/107736662/194196619-000ed259-6fca-437b-9af2-5fcc5cb546cb.png)
-
 
 Technologies used:
 HTML, CSS, Javascript, React
@@ -20,4 +19,4 @@ Unsolved problems:
 Individual cards are not yet clickable.
 
 Major Hurdles:
-The API I chose was fairly straight-forward, with fewer features than the ones I'd had previous experience with. Due to this, I had to rethink my approach, and narrow the scope of my project in order to get it off the ground. However, I've since built for myself some of the functionality that I was expecting to find in the API, so I expect I can take this project further from here. 
+The API I chose was fairly straight-forward, with fewer features than the ones I'd had previous experience with. Due to this, I had to rethink my approach, and narrow the scope of my project in order to get it off the ground. However, I've since built for myself some of the functionality that I was expecting to find in the API, so I expect I can take this project further from here.
