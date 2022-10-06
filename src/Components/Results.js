@@ -2,35 +2,38 @@ import { useParams } from 'react-router-dom';
 
 function Results({ cards }) {
 	const { params } = useParams();
-	let filteredCards = '';
+	let filteredCards = [];
+	// function defineParams(params) {
 	switch (params) {
-		default:
-			'try again';
-			break;
-		case ('Runner', 'Corporation'):
+		// case 'core':
+
+		case 'runner':
+		case 'corp':
 			filteredCards = cards.filter((card) => card.side_code == params);
 			break;
-		case ('anarch',
-		'criminal',
-		'shaper',
-		'jinteki',
-		'haas-bioroid',
-		'nbn',
-		'weyland-consortium'):
+		case 'anarch':
+		case 'criminal':
+		case 'shaper':
+		case 'jinteki':
+		case 'haas-bioroid':
+		case 'nbn':
+		case 'weyland-consortium':
 			filteredCards = cards.filter((card) => card.faction_code == params);
 			break;
-		case ('identity',
-		'event',
-		'hardware',
-		'program',
-		'resource',
-		'agenda',
-		'asset',
-		'operation',
-		'ice',
-		'upgrade'):
+		case 'identity':
+		case 'event':
+		case 'hardware':
+		case 'program':
+		case 'resource':
+		case 'agenda':
+		case 'asset':
+		case 'operation':
+		case 'ice':
+		case 'upgrade':
 			filteredCards = cards.filter((card) => card.type_code == params);
 	}
+	// return filteredCards;
+	// }
 
 	let newCardList = filteredCards.map((card) => {
 		return (

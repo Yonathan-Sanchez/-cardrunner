@@ -16,74 +16,72 @@ function Sidebar({ cards, searchString, setSearchString, setFoundCard }) {
 			</h3>
 			<hr />
 			<h3>
-				<Link to='/TypeCodeResults/identity'>{'>'}identity</Link>
+				<Link to='/Results/identity'>{'>'}identity</Link>
 			</h3>
 			<hr />
 			<h3>
-				<Link to='/SideCodeResults/corp'>{'>'}corporation</Link>
+				<Link to='/Results/corp'>{'>'}corporation</Link>
 			</h3>
 			<ul>
 				<li>--factions</li>
 				<li>
-					<Link to='/FactionCodeResults/jinteki'>{'>'}Jinteki</Link>
+					<Link to='/Results/jinteki'>{'>'}Jinteki</Link>
 				</li>
 				<li>
-					<Link to='/FactionCodeResults/haas-bioroid'>{'>'}Haas-Bioroid</Link>
+					<Link to='/Results/haas-bioroid'>{'>'}Haas-Bioroid</Link>
 				</li>
 				<li>
-					<Link to='/FactionCodeResults/nbn'>{'>'}NBN</Link>
+					<Link to='/Results/nbn'>{'>'}NBN</Link>
 				</li>
 				<li>
-					<Link to='/FactionCodeResults/weyland-consortium'>
-						{'>'}Weyland Consortium
-					</Link>
+					<Link to='/Results/weyland-consortium'>{'>'}Weyland Consortium</Link>
 				</li>
 				<br />
 				<li>--types</li>
 				<li>
-					<Link to='/TypeCodeResults/agenda'>{'>'}agenda</Link>
+					<Link to='/Results/agenda'>{'>'}agenda</Link>
 				</li>
 				<li>
-					<Link to='/TypeCodeResults/asset'>{'>'}asset</Link>
+					<Link to='/Results/asset'>{'>'}asset</Link>
 				</li>
 				<li>
-					<Link to='/TypeCodeResults/operation'>{'>'}operation</Link>
+					<Link to='/Results/operation'>{'>'}operation</Link>
 				</li>
 				<li>
-					<Link to='/TypeCodeResults/ice'>{'>'}ice</Link>
+					<Link to='/Results/ice'>{'>'}ice</Link>
 				</li>
 				<li>
-					<Link to='/TypeCodeResults/upgrade'>{'>'}upgrade</Link>
+					<Link to='/Results/upgrade'>{'>'}upgrade</Link>
 				</li>
 			</ul>
 			<hr />
 			<h3>
-				<Link to='/SideCodeResults/runner'>{'>'}runner</Link>
+				<Link to='/Results/runner'>{'>'}runner</Link>
 			</h3>
 			<ul>
 				<li>--factions</li>
 				<li>
-					<Link to='/FactionCodeResults/anarch'>{'>'}Anarch</Link>
+					<Link to='/Results/anarch'>{'>'}Anarch</Link>
 				</li>
 				<li>
-					<Link to='/FactionCodeResults/criminal'>{'>'}Criminal</Link>
+					<Link to='/Results/criminal'>{'>'}Criminal</Link>
 				</li>
 				<li>
-					<Link to='/FactionCodeResults/shaper'>{'>'}Shaper</Link>
+					<Link to='/Results/shaper'>{'>'}Shaper</Link>
 				</li>
 				<br />
 				<li>--types</li>
 				<li>
-					<Link to='/TypeCodeResults/event'>{'>'}event</Link>
+					<Link to='/Results/event'>{'>'}event</Link>
 				</li>
 				<li>
-					<Link to='/TypeCodeResults/hardware'>{'>'}hardware</Link>
+					<Link to='/Results/hardware'>{'>'}hardware</Link>
 				</li>
 				<li>
-					<Link to='/TypeCodeResults/program'>{'>'}program</Link>
+					<Link to='/Results/program'>{'>'}program</Link>
 				</li>
 				<li>
-					<Link to='/TypeCodeResults/resource'>{'>'}resource</Link>
+					<Link to='/Results/resource'>{'>'}resource</Link>
 				</li>
 			</ul>
 			<footer></footer>

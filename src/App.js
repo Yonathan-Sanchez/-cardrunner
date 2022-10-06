@@ -7,6 +7,7 @@ import SideCodeResults from './Components/SideCodeResults.js';
 import FactionCodeResults from './Components/FactionCodeResults.js';
 import TypeCodeResults from './Components/TypeCodeResults.js';
 import SearchResults from './Components/SearchResults.js';
+import Results from './Components/Results.js';
 import './CSS/App.css';
 
 function App() {
@@ -50,7 +51,7 @@ function App() {
 						element={<Main cards={cards} setCards={setCards} />}
 					/>
 					<Route path='/Core' element={<Core cards={cards} />} />
-					<Route
+					{/* <Route
 						path='/SideCodeResults/:sideCode'
 						element={<SideCodeResults cards={cards} />}
 					/>
@@ -62,7 +63,8 @@ function App() {
 					<Route
 						path='/TypeCodeResults/:typeCode'
 						element={<TypeCodeResults cards={cards} />}
-					/>
+					/> */}
+					<Route path='/Results/:params' element={<Results cards={cards} />} />
 					<Route
 						path='/SearchResults/:cardName'
 						element={
