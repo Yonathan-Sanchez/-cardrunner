@@ -12,7 +12,7 @@ function Sidebar({ cards, searchString, setSearchString, setFoundCard }) {
 			/>
 			<hr />
 			<h3>
-				<Link to={'/Core'}>{'>'}core</Link>{' '}
+				<Link to={'Results/core'}>{'>'}core</Link>{' '}
 			</h3>
 			<hr />
 			<h3>

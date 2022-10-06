@@ -12,7 +12,7 @@ function Main(props) {
 			</p>
 			<p>
 				{'<--'} Type in a name, click on a subset, or see the full{' '}
-				<Link to={'/Core'}>core</Link> set.
+				<Link to={'/Results/core'}>core</Link> set.
 			</p>
 		</div>
 	);

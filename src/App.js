@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Sidebar from './Components/Sidebar.js';
 import Main from './Components/Main.js';
-import Core from './Components/Core.js';
-import SideCodeResults from './Components/SideCodeResults.js';
-import FactionCodeResults from './Components/FactionCodeResults.js';
-import TypeCodeResults from './Components/TypeCodeResults.js';
 import SearchResults from './Components/SearchResults.js';
 import Results from './Components/Results.js';
 import './CSS/App.css';
@@ -50,20 +46,6 @@ function App() {
 						path='/'
 						element={<Main cards={cards} setCards={setCards} />}
 					/>
-					<Route path='/Core' element={<Core cards={cards} />} />
-					{/* <Route
-						path='/SideCodeResults/:sideCode'
-						element={<SideCodeResults cards={cards} />}
-					/>
-					<Route
-						path='/FactionCodeResults/:factionCode'
-						element={<FactionCodeResults cards={cards} />}
-					/>
-
-					<Route
-						path='/TypeCodeResults/:typeCode'
-						element={<TypeCodeResults cards={cards} />}
-					/> */}
 					<Route path='/Results/:params' element={<Results cards={cards} />} />
 					<Route
 						path='/SearchResults/:cardName'

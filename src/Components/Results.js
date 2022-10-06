@@ -1,12 +1,13 @@
 import { useParams } from 'react-router-dom';
 
-function Results({ cards }) {
+function Results({ cards, foundCard }) {
 	const { params } = useParams();
 	let filteredCards = [];
-	// function defineParams(params) {
-	switch (params) {
-		// case 'core':
 
+	switch (params) {
+		case 'core':
+			filteredCards = cards;
+			break;
 		case 'runner':
 		case 'corp':
 			filteredCards = cards.filter((card) => card.side_code == params);
@@ -32,8 +33,6 @@ function Results({ cards }) {
 		case 'upgrade':
 			filteredCards = cards.filter((card) => card.type_code == params);
 	}
-	// return filteredCards;
-	// }
 
 	let newCardList = filteredCards.map((card) => {
 		return (
