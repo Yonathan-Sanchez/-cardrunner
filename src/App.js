@@ -34,7 +34,7 @@ function App() {
 		<div className='App'>
 			<header className='App-header'>
 				<h1 className='title'>
-					<Link to='/'> > c a r d r u n n e r</Link>
+					<Link to='/'> {'>'} c a r d r u n n e r</Link>
 				</h1>
 			</header>
 			<Sidebar

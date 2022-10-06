@@ -33,7 +33,7 @@ function Search({ searchString, setSearchString, cards, setFoundCard }) {
 				value={searchString}
 			/>
 			<button type='submit' value={'Submit'}>
-				>
+				{'>'}
 			</button>
 		</form>
 	);
