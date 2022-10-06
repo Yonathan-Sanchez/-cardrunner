@@ -4,7 +4,7 @@ function Main(props) {
 	return (
 		<div className='landing'>
 			<h2>
-				Welcome to <span className='fancy'>Cardrunner</span>.
+				Welcome to <span className='fancy'>Cardrunner.</span>
 			</h2>
 			<p>
 				Browse the cards of the base Netrunner game by subsets or find cards by
