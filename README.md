@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+Description:
+">cardrunner" is a React app that pulls data from https://netrunnerdb.com/api/doc and makes it accessible to users. At its core, the app allows users to navigate the cards that make up the base Netrunner game. It comes from a deep appreciation for the game itself and the community that keeps it alive and strong online. Version 1.0 functions as a way for people who are interested in the game to familiarize themselves with the base game before diving into the full game.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Screenshot of the app:
+![Screenshot of ">cardrunner"](https://user-images.githubusercontent.com/107736662/194196619-000ed259-6fca-437b-9af2-5fcc5cb546cb.png)
 
-## Available Scripts
 
-In the project directory, you can run:
+Technologies used:
+HTML, CSS, Javascript, React
 
-### `npm start`
+User stories:
+As a user, I want to find a card by its name so that I see the card.
+As a user, I would like to click on an individual card to see more details about it so that I can decide if I want to include it in my deck or collection.
+As a user, I want to be able to easily navigate to the results of my search, the home page, and cards I’ve recently searched so that I can find where I want to be on the site from any place.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Wireframes:
+![">cardrunner" Wireframe](https://user-images.githubusercontent.com/107736662/194197206-fdb02ade-235d-4d47-8cba-99efad2c4a5b.jpeg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Unsolved problems:
+Individual cards are not yet clickable.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Major Hurdles:
+The API I chose was fairly straight-forward, with fewer features than the ones I'd had previous experience with. Due to this, I had to rethink my approach, and narrow the scope of my project in order to get it off the ground. However, I've since built for myself some of the functionality that I was expecting to find in the API, so I expect I can take this project further from here. 
