@@ -1,11 +1,38 @@
 import { useParams } from 'react-router-dom';
 
 function Results({ cards }) {
-	const { sideCode } = useParams();
+	const { params } = useParams();
+	let filteredCards = '';
+	switch (params) {
+		default:
+			'try again';
+			break;
+		case ('Runner', 'Corporation'):
+			filteredCards = cards.filter((card) => card.side_code == params);
+			break;
+		case ('anarch',
+		'criminal',
+		'shaper',
+		'jinteki',
+		'haas-bioroid',
+		'nbn',
+		'weyland-consortium'):
+			filteredCards = cards.filter((card) => card.faction_code == params);
+			break;
+		case ('identity',
+		'event',
+		'hardware',
+		'program',
+		'resource',
+		'agenda',
+		'asset',
+		'operation',
+		'ice',
+		'upgrade'):
+			filteredCards = cards.filter((card) => card.type_code == params);
+	}
 
-	const cardsBySideCode = cards.filter((card) => card.side_code == sideCode);
-
-	let newCardList = cardsBySideCode.map((card) => {
+	let newCardList = filteredCards.map((card) => {
 		return (
 			<div className='cardListItem' key={card.code}>
 				<img
@@ -17,5 +44,4 @@ function Results({ cards }) {
 	});
 	return newCardList;
 }
-
 export default Results;
