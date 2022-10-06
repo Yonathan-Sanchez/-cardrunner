@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Sidebar from './Components/Sidebar.js';
-import Main from './Pages/Main.js';
+import Main from './Components/Main.js';
 import Core from './Components/Core.js';
 import SideCodeResults from './Components/SideCodeResults.js';
 import FactionCodeResults from './Components/FactionCodeResults.js';
 import TypeCodeResults from './Components/TypeCodeResults.js';
 import SearchResults from './Components/SearchResults.js';
 import './CSS/App.css';
-// import './CSS/Title.css';
 
 function App() {
 	const [cards, setCards] = useState([]);
@@ -35,7 +34,7 @@ function App() {
 		<div className='App'>
 			<header className='App-header'>
 				<h1 className='title'>
-					<Link to='/'>/ c a r d r u n n e r</Link>
+					<Link to='/'> > c a r d r u n n e r</Link>
 				</h1>
 			</header>
 			<Sidebar

@@ -15,7 +15,7 @@ h1 {
 }
 
 h1 a{
-   color: #3bd8ff;
+    color: #3bd8ff;
 }
 h3 {
     margin: 0;
@@ -24,7 +24,7 @@ h3 {
 
 .App {
     display: grid;
-    grid-template-columns: 200px minmax(300px, 1fr);
+    grid-template-columns: 250px minmax(300px, 1fr);
     grid-template-rows: 100px 1fr;
     font-family: 'Orbitron', sans-serif;
 
@@ -59,7 +59,7 @@ h3 {
     grid-row: 2 / span 2;
 }
 p {
-   text-align: center;
+    text-align: center;
 }
 
 .cardList {
@@ -70,6 +70,10 @@ p {
     justify-items: center;
     align-items: center;
     margin-top: 10px;
+}
+
+.singleCard{
+    grid-column: 1 /span 4;
 }
 
 .landing {
@@ -107,22 +111,19 @@ footer {
 }
 
 form {
-justify-self: center;
-align-self: center;
-margin-top: 5px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5px;
 }
 
 input[type="text"],
 textarea {
     background-color:rgb(156, 43, 184);
+    color: rgba(59, 216, 255, 1);
     text-align: center;
     border-radius: 5%;
-}
 
-input,
-select,
-textarea {
-    color: rgba(59, 216, 255, 1)
 }
 
 ::placeholder {
@@ -130,5 +131,15 @@ textarea {
     color: rgba(153, 223, 255, 0.5)
 }
  input:focus::placeholder {
-     color: transparent;
+    color: transparent;
  }
+
+button[type='submit']{
+    background-color:black;
+    font-family: 'Orbitron', sans-serif;
+    color:rgb(194, 49, 222);
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 0;
+    cursor: cell;
+}
